@@ -1,8 +1,10 @@
+import os
+
 from twilio.rest import Client
 from twilio.base.exceptions import TwilioRestException
 
-account = "AC912a781e3b96d828739a3a82e3b6ba0f"
-token = "094ffcbd0d5ac453c6f5abf57ddc1a8f"
+account = os.environ.get('TWILIO_SID')
+token = os.environ.get('TWILIO_TOKEN')
 client = Client(account, token)
 
 
