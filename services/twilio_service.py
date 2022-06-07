@@ -19,3 +19,4 @@ def send_message(message, to_phone):
     except TwilioRestException as err:
         print(err)
 
+send_message("Hey gal", "+972509191414")
